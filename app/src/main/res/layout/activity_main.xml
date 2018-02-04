@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context="com.example.android.studycase.MainActivity">
+
+
+    <TextView
+        android:id="@+id/text_makan_malam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/textview1_top"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="@string/text_makan_malam" />
+
+    <TextView
+        android:id="@+id/text_dengan_milea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_makan_malam"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="dengan Milea"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edit_makanan"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/text_dengan_milea"
+        android:layout_marginTop="98dp"
+        android:gravity="center"
+        android:text="Nasi Uduk"/>
+
+    <EditText
+        android:id="@+id/edit_porsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_makanan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/button_eatbus"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edit_porsi"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="52dp"
+        android:onClick="onEatbus"
+        android:background="@color/colorAccent"
+        android:text="EATBUS"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/button_abnormal"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_eatbus"
+        android:layout_alignBottom="@+id/button_eatbus"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorAccent"
+        android:onClick="onAbnormal"
+        android:text="ABNORMAL"
+        android:textColor="#FFFFFF"/>
+
+
+</RelativeLayout>
